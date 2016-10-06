@@ -2,5 +2,20 @@
   "applications": [{
     "title": "I'm a Test",
     "screenshot": "https://mxcraft.de/icon.png"
+  },{
+    "title": "I'm a Test, Too",
+    "screenshot": "https://mxcraft.de/icon.png"
+  },{
+    "title": "I have a super duper ultra long name that definitely exceeds the size of the Panel header",
+    "screenshot": "https://mxcraft.de/icon.png"
+  },{
+    "title": "Foo",
+    "screenshot": "https://mxcraft.de/icon.png"
+  },{
+    "title": "Bar",
+    "screenshot": "https://mxcraft.de/icon.png"
+  },{
+    "title": "Baz",
+    "screenshot": "https://mxcraft.de/icon.png"
   }]
 }
