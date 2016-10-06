@@ -13,10 +13,13 @@
       content="{Application>/applications}"
     >
       <Panel
-        headerText="{Application>title}"
-        tooltip="{Application>title}"
         backgroundDesign="Solid"
       >
+        <headerToolbar>
+          <Toolbar>
+            <Title text="{Application>title}" tooltip="{Application>title}" />
+          </Toolbar>
+        </headerToolbar>
         <Image height="100%" width="100%" src="{Application>screenshot}" />
       </Panel>
     </l:Grid>
