@@ -27,7 +27,7 @@ sap.ui.define([
     {
       return {
         'Device': Device,
-        'Application': './models/Applications.json'
+        'Application': './pages/index/models/Applications.json'
       };
     }
     
