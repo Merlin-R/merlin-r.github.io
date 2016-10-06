@@ -16,7 +16,7 @@
         headerText="{Application>title}"
         backgroundDesign="Solid"
       >
-        <Image height="100%" width="100%" src="https://mxcraft.de/favicon.png" />
+        <Image height="100%" width="100%" src="{Application>screenshot}" />
       </Panel>
     </l:Grid>
   </Page>

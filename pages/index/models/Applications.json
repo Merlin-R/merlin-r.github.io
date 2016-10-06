@@ -1,5 +1,6 @@
 {
   "applications": [{
-    "title": "I'm a Test"
+    "title": "I'm a Test",
+    "screenshot": "https://mxcraft.de/icon.png"
   }]
 }
