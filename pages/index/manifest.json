@@ -1,0 +1,79 @@
+{
+  "_version": "0.1.1",
+  "sap.app": {
+    "_version": "0.1.1",
+    "applicationVersion": {
+      "version": "0.1.1"
+    },
+    "description": "{{app.description}}",
+    "i18n": "models/i18n/i18n.properties",
+    "id": "me.reichwald.pages.index",
+    "title": "{{app.title}}",
+    "type": "application"
+  },
+  "sap.ui": {
+    "_version": "0.1.1",
+    "deviceTypes": {
+      "desktop": true,
+      "phone": true,
+      "tablet": true
+    },
+    "supportedThemes": [
+      "sap_bluecrystal"
+    ],
+    "technology": "UI5"
+  },
+  "sap.ui5": {
+    "_version": "0.1.1",
+    "dependencies": {
+      "libs": {
+        "sap.m": {}
+      },
+      "minUI5Version": "1.30"
+    },
+    "models": {
+      "i18n": {
+        "settings": {
+          "bundleName": "me.reichwald.pages.index.models.i18n.i18n"
+        },
+        "type": "sap.ui.model.resource.ResourceModel"
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "me.reichwald.pages.index.view",
+        "controlId": "app",
+        "controlAggregation": "detailPages"
+      },
+      "routes": [{
+        "pattern": "",
+        "name": "menu",
+        "target": "menu",
+        "subroutes": [{
+          "pattern": "Control/Accordion",
+          "name": "Control/Accordion",
+          "target": "Control/Accordion"
+        },{
+          "pattern": "Class/{target}",
+          "name": "Class",
+          "target": "Class"
+        }]
+      }],
+      "targets": {
+        "menu": {
+          "controlAggregation": "masterPages",
+          "viewName": "Menu"
+        },
+        "Control/Accordion": {
+          "viewName": "controls/Accordion"
+        },
+        "Class": {
+          "viewName": "Class"
+        }
+      }
+    },
+    "rootView": "me.reichwald.pages.index.view.App"
+  }
+}
