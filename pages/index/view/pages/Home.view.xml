@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mvc:View
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+  xmlns:mrd="me.reichwald.controls"
+  xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+  controllerName="me.reichwald.pages.index.controller.Menu">
+  <Page title="{i18n>home.title}">
+    <l:Grid
+      defaultSpan="L3 M4 S6"
+      content="{Application>/applications}"
+    >
+      <Panel
+        headerText="{Application>title}"
+      >
+        <Image height="100%" width="100%" src="https://mxcraft.de/favicon.png" />
+      </Panel>
+    </l:Grid>
+  </Page>
+</mvc:View>

@@ -45,32 +45,17 @@
         "viewType": "XML",
         "viewPath": "me.reichwald.pages.index.view",
         "controlId": "app",
-        "controlAggregation": "detailPages"
+        "controlAggregation": "pages"
       },
       "routes": [{
-        "pattern": "",
-        "name": "menu",
-        "target": "menu",
-        "subroutes": [{
-          "pattern": "Control/Accordion",
-          "name": "Control/Accordion",
-          "target": "Control/Accordion"
-        },{
-          "pattern": "Class/{target}",
-          "name": "Class",
-          "target": "Class"
-        }]
+        "pattern": ":section:",
+        "name": "home",
+        "target": "home",
+        "subroutes": []
       }],
       "targets": {
-        "menu": {
-          "controlAggregation": "masterPages",
-          "viewName": "Menu"
-        },
-        "Control/Accordion": {
-          "viewName": "controls/Accordion"
-        },
-        "Class": {
-          "viewName": "Class"
+        "home": {
+          "viewName": "pages.Home"
         }
       }
     },
