@@ -6,7 +6,7 @@
   xmlns:core="sap.ui.core"
   xmlns:mrd="me.reichwald.controls"
   xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-  controllerName="me.reichwald.pages.index.controller.Menu">
+  controllerName="me.reichwald.pages.index.controller.pages.Home">
   <Page title="{i18n>home.title}">
     <l:Grid
       defaultSpan="L3 M4 S6"
