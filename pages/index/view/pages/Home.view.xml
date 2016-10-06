@@ -16,7 +16,7 @@
         backgroundDesign="Solid"
       >
         <headerToolbar>
-          <Toolbar>
+          <Toolbar design="Solid">
             <Title text="{Application>title}" tooltip="{Application>title}" />
           </Toolbar>
         </headerToolbar>
